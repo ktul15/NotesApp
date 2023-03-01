@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="Theme.PL_Notes_App" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:statusBarColor">@color/purple_700</item>
+        <!-- Primary brand color. -->
+        <item name="android:colorPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+<!--        <item name="android:colorSecondary">@color/black</item>-->
+        <item name="android:textColorSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/dark_gray</item>
+        <!-- Customize your theme here. -->
+
     </style>
+
+    <style name="Theme.PL_Notes_App.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
 </resources>
